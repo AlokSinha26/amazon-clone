@@ -2,87 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+@import url('https://fonts.googleapis.com/css2?family=Ember:wght@400;500;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 39 14% 92%;
+    --foreground: 210 11% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 11% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 11% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 33 100% 50%;
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 29% 11%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 14% 89%;
+    --muted-foreground: 210 11% 40%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 195 100% 40%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 14% 83%;
+    --input: 210 14% 83%;
+    --ring: 33 100% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.25rem;
+
+    /* Amazon specific colors */
+    --amazon-orange: 33 100% 50%;
+    --amazon-orange-hover: 33 100% 45%;
+    --amazon-dark: 210 29% 11%;
+    --amazon-dark-hover: 210 29% 18%;
+    --amazon-light-dark: 207 27% 17%;
+    --amazon-blue: 195 100% 35%;
+    --amazon-blue-hover: 195 100% 30%;
+    --amazon-yellow: 48 100% 50%;
+    --amazon-green: 145 63% 42%;
+    --amazon-red: 0 100% 42%;
+    --amazon-gray: 210 14% 89%;
+    --amazon-gray-dark: 210 11% 71%;
+    --amazon-star: 40 100% 50%;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 210 29% 11%;
+    --foreground: 0 0% 100%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 207 27% 17%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 207 27% 17%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 33 100% 50%;
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 14% 89%;
+    --secondary-foreground: 210 29% 11%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 207 27% 25%;
+    --muted-foreground: 210 14% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 195 100% 40%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 207 27% 25%;
+    --input: 207 27% 25%;
+    --ring: 33 100% 50%;
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +107,41 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-family: "Amazon Ember", Arial, sans-serif;
+  }
+}
+
+@layer components {
+  .amazon-btn {
+    @apply bg-gradient-to-b from-[hsl(48,100%,72%)] to-[hsl(40,100%,62%)] border border-[hsl(40,80%,50%)] rounded-lg px-4 py-1.5 text-sm font-medium text-[hsl(210,11%,15%)] hover:from-[hsl(48,100%,65%)] hover:to-[hsl(40,100%,55%)] transition-all cursor-pointer shadow-sm;
+  }
+
+  .amazon-btn-primary {
+    @apply bg-[hsl(var(--amazon-orange))] hover:bg-[hsl(var(--amazon-orange-hover))] text-white font-medium rounded-full px-6 py-2 transition-colors;
+  }
+
+  .amazon-link {
+    @apply text-[hsl(var(--amazon-blue))] hover:text-[hsl(var(--amazon-red))] hover:underline cursor-pointer transition-colors;
+  }
+
+  .amazon-card {
+    @apply bg-card rounded-sm p-4 hover:shadow-lg transition-shadow;
+  }
+
+  .amazon-search {
+    @apply flex-1 h-10 rounded-none border-0 focus:ring-2 focus:ring-[hsl(var(--amazon-orange))] outline-none px-3;
+  }
+
+  .star-rating {
+    @apply text-[hsl(var(--amazon-star))];
+  }
+
+  .prime-badge {
+    @apply text-[hsl(var(--amazon-blue))] font-bold text-sm;
+  }
+
+  .deal-badge {
+    @apply bg-[hsl(var(--amazon-red))] text-white text-xs font-bold px-2 py-0.5 rounded-sm;
   }
 }
