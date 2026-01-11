@@ -1,73 +1,73 @@
-# Welcome to your Lovable project
+# 🛒 Amazon Clone
 
-## Project info
+A responsive **Amazon-inspired e-commerce website clone** built to practice modern web development skills.  
+This project replicates the core UI and functionality of Amazon, including product listings, cart management, and a smooth user experience.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- 🏠 Homepage with product listings  
+- 🔍 Search bar for products  
+- 🛍️ Add to Cart functionality  
+- 🧾 Cart page with total price calculation  
+- 📱 Fully responsive design (Mobile + Desktop)  
+- 🎨 Clean and modern UI similar to Amazon  
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend:** HTML, CSS, JavaScript  
+- **Framework/Library (if used):** React.js  
+- **Styling:** CSS / Tailwind CSS  
+- **Version Control:** Git & GitHub  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📸 Screenshots
+<img width="1715" height="604" alt="image" src="https://github.com/user-attachments/assets/bf2fa9b5-0ed5-48f0-bc9c-162e760a3d5f" />
+<img width="1715" height="604" alt="image" src="https://github.com/user-attachments/assets/2934677d-ae6f-468d-9a8f-a293a23d6af7" />
+<img width="1715" height="604" alt="image" src="https://github.com/user-attachments/assets/e7de2e88-d6fd-4524-a9a1-74559763947d" />
+<img width="1715" height="604" alt="image" src="https://github.com/user-attachments/assets/ee72c36a-f260-4991-9428-cc79ecc6de98" />
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Follow these steps:
+## 🎯 Purpose of Project
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+This project was built to:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Practice frontend development  
+- Understand e-commerce UI/UX  
+- Improve JavaScript & React skills  
+- Strengthen portfolio projects  
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 🤝 Contributions
 
-**Edit a file directly in GitHub**
+Contributions, issues, and feature requests are welcome!  
+Feel free to fork this repository and submit a pull request.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📄 License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This project is for educational purposes only.  
+All product images and brand references belong to Amazon.
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 👨‍💻 Author
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+**Alok Sinha**  
+B.E. Computer Engineering Student  
 
-## How can I deploy this project?
+🔗 GitHub: https://github.com/your-username
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+⭐ If you like this project, give it a star!
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+(Add screenshots of your project here)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
