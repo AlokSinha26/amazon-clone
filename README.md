@@ -26,8 +26,9 @@ This project replicates the core UI and functionality of Amazon, including produ
 ---
 
 ## 📸 Screenshots
-<img width="1715" height="604" alt="image" src="https://github.com/user-attachments/assets/bf2fa9b5-0ed5-48f0-bc9c-162e760a3d5f" />
-<img width="1715" height="604" alt="image" src="https://github.com/user-attachments/assets/2934677d-ae6f-468d-9a8f-a293a23d6af7" />
+<img width="1908" height="716" alt="image" src="https://github.com/user-attachments/assets/27e8c988-8936-401b-94b9-3b88661216e4" />
+<img width="1908" height="716" alt="image" src="https://github.com/user-attachments/assets/7d480315-6dcd-4f66-b1f1-01373ab447a9" />
+
 <img width="1715" height="604" alt="image" src="https://github.com/user-attachments/assets/e7de2e88-d6fd-4524-a9a1-74559763947d" />
 <img width="1715" height="604" alt="image" src="https://github.com/user-attachments/assets/ee72c36a-f260-4991-9428-cc79ecc6de98" />
 
@@ -69,5 +70,5 @@ B.E. Computer Engineering Student
 ⭐ If you like this project, give it a star!
 
 
-(Add screenshots of your project here)
+
 
