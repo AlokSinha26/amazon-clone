@@ -63,7 +63,7 @@ All product images and brand references belong to Amazon.
 **Alok Sinha**  
 B.E. Computer Engineering Student  
 
-🔗 GitHub: https://github.com/your-username
+🔗 GitHub: https://github.com/AlokSinha26
 
 ---
 
